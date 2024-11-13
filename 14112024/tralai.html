@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHNT COFFEE☕ | XHNT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Đảm bảo trang web có màu nền đồng bộ */
+      body {
+        background-color: #fff5d7; /* Màu nền mới là #fff5d7 */
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Đảm bảo rằng mọi phần tử bên trong cũng có màu nền đồng bộ */
+      .section-content {
+        background-color: #fff5d7; /* Đảm bảo phần này cũng có màu nền giống body */
+      }
+
+      /* Style cho nút với hiệu ứng hover */
+      .button-container button {
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+        border: 2px solid #554025;
+        transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động cho tất cả các thay đổi */
+      }
+
+      .button-container .add-to-cart {
+        background-color: #554025;
+        color: #fff5d7;
+      }
+
+      .button-container .back-button {
+        background-color: #fff5d7;
+        color: #554025;
+      }
+
+      /* Hover hiệu ứng cho nút "Thêm vào giỏ hàng" */
+      .button-container .add-to-cart:hover {
+        background-color: #fff5d7;
+        color: #554025;
+        border-color: #554025;
+      }
+
+      /* Hover hiệu ứng cho nút "Quay lại" */
+      .button-container .back-button:hover {
+        background-color: #554025;
+        color: #fff5d7;
+        border-color: #554025;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h3 class="logo-text"><b>XHNT COFFEE☕</b></h3>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Sản Phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Đánh Giá</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Liên Hệ </a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <section class="about-section" id="about">
+      <div class="section-content">
+        <div class="about-image-wrapper">
+          <img src="asset/trà lài xoá phông.png" alt="Cà Phê Sữa Đá" />
+        </div>
+        <div class="about-details">
+          <h2 class="section-title">Trà Lài</h2>
+          <p class="text" style="text-align: left;">
+            Trà Lài: Trà lài thơm nhẹ, dịu dàng, hoàn hảo cho những ai yêu thích hương hoa tự nhiên.  </p>
+          <div class="product-info">
+            <p class="product-price" style="font-size: 20px; font-weight: bold; color: #554025; margin-bottom: 15px;">
+              Giá: 40,000 VND
+            </p>
+          </div>
+
+          <!-- Container chứa các nút -->
+          <div class="button-container">
+            <!-- Nút Thêm vào giỏ hàng với màu nền và chữ thay đổi khi hover -->
+            <button 
+              onclick="alert('Cà Phê Đen Đá đã được thêm vào giỏ hàng thành công!')" 
+              class="add-to-cart">
+              Thêm vào giỏ hàng️🛒
+            </button>
+
+            <!-- Nút Quay lại với màu nền và chữ thay đổi khi hover -->
+            <button 
+              onclick="window.history.back();" 
+              class="back-button">
+              Quay lại
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
